@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<title>DanskSprog</title>
+<style>
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header "
+    "nav article ads"
+    "footer footer footer";
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 20% 1fr 20%;
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }
+#pageHeader {
+  grid-area: header;
+}
+#pageFooter {
+  grid-area: footer;
+}
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+#siteAds { 
+  grid-area: ads; 
+  background-color: rgb(223, 140, 47);
+
+  }
+header, footer, article, nav, div {
+  padding: 20px;
+  background: lemonchiffon;
+}
+
+nav{
+  background-color: rgb(223, 140, 47);
+}
+
+figure {
+    margin: 0;
+}
+.wrapper{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1em;
+           /* grid-auto-rows: 300px; */
+            grid-auto-rows: minmax(100px, auto);
+        }
+        .wrapper > div{
+            background: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+
+</style>
+<body>
+ 
+ 
+ 
+  <header id="pageHeader" style="background-color:#E6B0C5;">
+
+ 
+ <p> <a href="../index.html"> <img src="../Image/phone-icon.jpg" width=40 heigth=80 alt=Home align=left> DANSK </a></p>
+  
+   <!-- <figure align="right">
+    <figcaption>Lyt til samtalen</figcaption>
+    <audio
+        controls
+        src="Lægedialog1_red.wav"
+        align="middle">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure> -->
+  
+  </header>
+ 
+
+  <nav id="mainNav">
+    <h2 class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=DA>Øvelser<o:p></o:p></span></b></h2>
+
+  <p> Substantiver: Køn</p>
+  <p> Substantiver: Tal</p>
+
+
+
+  </nav>
+  
+  <article id="mainArticle">
+  <h1>Dialoger</h1>
+    <div class="wrapper">
+          <div> 
+              <a href="../Moduler/DU3.Mo1_Sprog.html" >    Indkøb </a>
+              
+          </div>
+          <div>
+              <a href="../Læge/Læge.html" >    Lægen </a>
+            
+          </div>
+          <div>
+              <a href="../Børnehaven/Børnehaven.html" >    Børnehaven </a>
+          
+          </div>
+          <div>
+              <a href="../Moduler/DU3.Mo4_Sprog.html" >    Boligselskabet </a>
+        
+          </div>
+          <div>
+              <a href="../Moduler/DU3.Mo5_Sprog.html" >    Kørekort </a>
+      
+          </div>
+          <div>
+              <a href="../Moduler/DU3.Mo6_Sprog.html" >    Sport </a>
+    
+          </div>
+
+
+
+
+    </div>    
+
+
+  
+</article>
+
+
+  
+  <div id="siteAds">
+
+    <h2 class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=DA>Grammatik<o:p></o:p></span></b></h2>
+
+    <p> Substantiver</p>
+    <p> Verber</p>
+    <p> Adjektiver</p>
+    <p> Adverbier</p>
+
+  <!-- dette er højre kolonne-->
+
+  </div>
+  <footer id="pageFooter" style="background-color:#E6B0C5;">
+  
+         <medium>&copy; Copyright 2020, Leon Josef Feng-Feldthusen & Steffen Haurholm-Larsen</medium>
+
+ 
+  </footer>
+</body>
